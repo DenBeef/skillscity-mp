@@ -1,4 +1,5 @@
-export const Books = [
+export default function handler(req, res) {
+    const books = [
 
         {
             key: 1,
@@ -22,7 +23,6 @@ export const Books = [
             link: "https://www.amazon.co.uk/Programming-Absolute-Beginners-Guide-Guides/dp/0789751984/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1675071543&sr=1-5",
             image: "https://m.media-amazon.com/images/I/41ez2Ye5fpL._SX383_BO1,204,203,200_.jpg"
         },
-
-
-    ]
-    
+    ];
+    res.json(books);
+}

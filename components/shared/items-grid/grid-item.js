@@ -1,5 +1,5 @@
 
-export default function BookItem({title, author, link, image}) {
+export default function GridItem({title, author, link, image}) {
         return (
         <div className="w-9/10 mx-10 grid justify-items-center bg-slate-50 p-4 shadow-xl text-center">
             <img src={image} width="150"/>

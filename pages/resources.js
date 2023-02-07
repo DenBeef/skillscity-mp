@@ -1,6 +1,5 @@
 import NavBar from "@/components/home/nav_bar";
-import BookGrid from "@/components/home/book-grid";
-import { ResList } from "./api/res_list";
+import Grid from "@/components/shared/items-grid";
 import Information from "@/components/home/bio";
 
 export default function resources() {
@@ -8,7 +7,7 @@ export default function resources() {
         <div>
             <NavBar />
             <Information text="I have compiled a range of resources that I have utilized to further my knowledge and development as a software developer." />
-            <BookGrid Books={ ResList }/>
+            <Grid dataSet={'res_list'}/>
 
         </div>
     )
