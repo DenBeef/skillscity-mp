@@ -8,9 +8,9 @@ export default function Grid({ dataSet }) {
 
     useEffect(() => {
         getInfo();
-  
+
     }, []);
-  
+
     const getInfo = async () => {
         const reponse = await fetch(`/api/${dataSet}`);
         const data = await reponse.json();
@@ -18,16 +18,16 @@ export default function Grid({ dataSet }) {
     }
 
     return (
-    <div className="mt-10 grid grid-cols-3 w-full">
-    {info.map((data) => {
-    return (
-            <GridItem
-                title={data.title} 
-                author={data.author} 
-                link={data.link}
-                image={data.image}
-            />
-)
-})}
-</div>)
+        <div className="mt-10 grid grid-cols-3 w-full">
+            {info.map((data) => {
+                return (
+                    <GridItem
+                        title={data.title}
+                        author={data.author}
+                        link={data.link}
+                        image={data.image}
+                    />
+                )
+            })}
+        </div>)
 }
