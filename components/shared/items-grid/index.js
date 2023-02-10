@@ -19,9 +19,9 @@ export default function Grid({ dataSet }) {
 
     return (
         <div className="mt-10 grid grid-cols-3 w-full">
-            {info.map((data) => {
+            {info.map((data, index) => {
                 return (
-                    <GridItem
+                    <GridItem key={index}
                         title={data.title}
                         author={data.author}
                         link={data.link}
