@@ -6,7 +6,7 @@ export default function Lists(props) {
                 <ul className="mt-5 ml-10 mb-5 grid grid-cols-3 w-full text-left">
                     {props.arr.map((item) => {
                         return (
-                            <li>▹ {item}</li>
+                            <li className="list-disc">{item}</li>
                         )
                     })}
                 </ul>
