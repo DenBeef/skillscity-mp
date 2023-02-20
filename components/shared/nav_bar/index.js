@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Name from "../../home/hero/index.js";
 import NavElement from "./nav_element.js";
 
@@ -11,8 +10,7 @@ export default function NavBar() {
             <Name name="Denis Cleary" className="" />
             <nav className="py-2 md:mt-10">
                 <NavElement ahref="/" name="HOME" />
-                <NavElement ahref="/myBooks" name="BOOKS" />
-                <NavElement ahref="/resources" name="RESOURCES" />
+                <NavElement ahref="/myResources" name="RESOURCES" />
             </nav>
         </div>
     );
