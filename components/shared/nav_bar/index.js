@@ -11,6 +11,7 @@ export default function NavBar() {
             <nav className="py-2 md:mt-10">
                 <NavElement ahref="/" name="HOME" />
                 <NavElement ahref="/myResources" name="RESOURCES" />
+                <NavElement ahref="/addResources" name="SHARE" />
             </nav>
         </div>
     );

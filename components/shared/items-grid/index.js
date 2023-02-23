@@ -16,7 +16,7 @@ export default function Grid({ dataSet }) {
         const data = await reponse.json();
         setInfo(data);
     }
-    console.log(info)
+
     return (
         <div className="mt-10 grid grid-cols md:grid-cols-3 w-full">
             {info.map((data, index) => {
